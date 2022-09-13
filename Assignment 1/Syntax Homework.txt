@@ -1,0 +1,22 @@
+	public static void main(String []args)  	 	 	 	 ok
+
+	public static void main(String args[])  	 	 	 	 ok
+
+	public static void main(String... args)  	 	 	 	 ok  
+
+	static public void main(String[] args) 					 ok
+
+	public void main(String[] args)  					  	 Main method is not static in class New, please define the main method
+
+	static void main(String[] args) 		 				 Main method not found in class New, please define the main method
+
+	public void static main(String[] args) 					 Error
+
+	abstract public static void main(String[] args) 		 illegal combination of modifiers: abstract and static
+
+	public static final void main(String[] args)			 ok
+
+	final public static void main(String[] args)  			 ok
+
+	final strictfp public static void main(String[] args)    warning: [strictfp] as of release 17, all floating-point expressions 
+	                                                         are evaluated strictly and 'strictfp' is not required
