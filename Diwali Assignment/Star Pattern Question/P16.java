@@ -1,71 +1,35 @@
 class P16
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
-		for(int i = 1; i <= 5; i++)
+		int h=5;
+		int w=5;
+		int space=w*5;
+		int x=1;
+		for(int a=1;a<=h;a++)
 		{
-			for(int j = 5-i; j >= 1; j--)
+			for(int i = x;i <= w;i++)
 			{
-				System.out.print(" ");
+				for(int j = space;j >= i;j--)
+				{
+					System.out.print(" ");
+				}
+				for(int k = 1;k <= i;k++)
+				{
+					System.out.print("* ");
+				}
+				System.out.println();
 			}
-			
-			for(int j = i; j >= 1; j--)
-			{
-				System.out.print("* ");
-			}
-			System.out.println();
+			x = x+2;
+			w = w+2;
 		}
-		
-		for(int i = 3; i <= 7; i++)
+		for(int i = 1;i <= 4;i++)
 		{
-			for(int j = 7-i; j >= 1; j--)
+			for(int j = space-3;j >= 1;j--)
 			{
 				System.out.print(" ");
 			}
-			
-			for(int j = i; j >= 1; j--)
-			{
-				System.out.print("* ");
-			}
-			System.out.println();
-		}
-		
-		for(int i = 5; i <= 9; i++)
-		{
-			for(int j = 9-i; j >= 1; j--)
-			{
-				System.out.print(" ");
-			}
-			
-			for(int j = i; j >= 1; j--)
-			{
-				System.out.print("* ");
-			}
-			System.out.println();
-		}
-		
-		for(int i = 7; i <= 11; i++)
-		{
-			for(int j = 11-i; j >= 1; j--)
-			{
-				System.out.print(" ");
-			}
-			
-			for(int j = i; j >= 1; j--)
-			{
-				System.out.print("* ");
-			}
-			System.out.println();
-		}
-		
-		for(int i = 9; i <= 13; i++)
-		{
-			for(int j = 13-i; j >= 1; j--)
-			{
-				System.out.print(" ");
-			}
-			
-			for(int j = i; j >= 1; j--)
+			for(int k= 1;k <= 4;k++)
 			{
 				System.out.print("* ");
 			}
